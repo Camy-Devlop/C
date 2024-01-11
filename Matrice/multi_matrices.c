@@ -13,7 +13,7 @@
 	
 	@return c: nouvelle matrice ou null
 */
-t_matrices ft_multi_matrices(t_matrices *a, t_matrices *b)
+t_matrices multi_matrices(t_matrices *a, t_matrices *b)
 {
 	unsigned int 	i;
 	unsigned int 	j;
@@ -23,7 +23,7 @@ t_matrices ft_multi_matrices(t_matrices *a, t_matrices *b)
 	j = 0;
 	if (a->lig != b->lig || a->col != b->col || !a->mat ||!b->mat)
 		return (NULL);
-	c.mat = ft_get_tab_2d(a->lig, a->col);
+	c.mat = get_tab_2d(a->lig, a->col);
 	if (!c.mat)
 		return (NULL);
 	c.lig = a->lig;
@@ -32,7 +32,7 @@ t_matrices ft_multi_matrices(t_matrices *a, t_matrices *b)
 	{
 		while (j < a->col)
 		{
-			c.mat[i][j] = ft_multi_ligne_colonne(a, b, i,j );
+			c.mat[i][j] = multi_ligne_colonne(a, b, i,j );
 			j++;
 		}
 		j = 0;
