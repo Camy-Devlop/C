@@ -13,7 +13,7 @@
 	@return a:	retourne le paramettre init  sinon il retrounr null 
 */
 
-t_matrices *ft_init(t_matrices *a)
+t_matrices *init(t_matrices *a)
 {
 	unsigned int	i;
 
@@ -29,7 +29,7 @@ t_matrices *ft_init(t_matrices *a)
  		if (!a->mat[i])
  		{	
  			a->lig = i;
- 			ft_free_matrices(&a);
+ 			free_matrices(&a);
  			return (NULL);
   		}
  		i++;
