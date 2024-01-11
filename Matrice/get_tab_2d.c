@@ -15,7 +15,7 @@
 				retourne NULL
 */
 
-int **ft_get_tab_2d(unsigned int l, unsigned int c)
+int **get_tab_2d(unsigned int l, unsigned int c)
 {
 	unsigned int	i;
 	
