@@ -14,7 +14,7 @@
 	@return	  :	ne retoune rien parce que la matrice a ete passer en paramtre pointeur
 	  
 */
-void ft_replir_ligne(t_matrices *a, int **tab)
+void replir_ligne(t_matrices *a, int **tab)
 {
  	unsigned int i;
  	unsigned int j;
