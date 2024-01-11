@@ -5,7 +5,7 @@
 
 #include "libmatrice.h"
 
-void ft_affichage_matrice(t_matrices a)
+void affichage_matrice(t_matrices a)
 {
 	unsigned int i;
 	unsigned int j;
