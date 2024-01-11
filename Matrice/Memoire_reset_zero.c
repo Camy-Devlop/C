@@ -8,12 +8,18 @@
                 pour nettoyer la memoire et la liberer proprement
 
   @param	tab : 	tableau a louer
-  @param	l	:	nombre de ligne dans le tableau  
-  @param  c : nombre de colone dans le tableau
+  @param	l	:	taille du tableau a nettoyé
   @return :
 */
-void memoire_reset_zero(int *zone_memoire)
+void memoire_reset_zero(int *zone_memoire, unsigned int n)
 {
+   unsigned int   i;
+
+   i = 0;
   //je met a zero la zone de memoire passer en parametre 
-  *zone_memoire = 0;
+   while (i < n)
+   {
+      zone_memoire[i] = 0;
+      i++;
+   }
 }
