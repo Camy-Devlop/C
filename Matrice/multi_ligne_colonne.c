@@ -6,7 +6,7 @@
 
 #include "libmatrice.h"
 
-int ft_multi_ligne_colonne(t_matrices *a , t_matrices *b, unsigned int lig, unsigned col)
+int multi_ligne_colonne(t_matrices *a , t_matrices *b, unsigned int lig, unsigned col)
 {
 	unsigned int	i;
 	int 			res;
