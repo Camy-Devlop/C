@@ -13,6 +13,6 @@
 */
 void ft_free_matrice(t_matrices *a)
 {
- 	ft_free_tab(a->mat, a->lig);
+ 	free_tab(a->mat, a->lig);
  	a->mat = (NULL);
 }
