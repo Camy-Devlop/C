@@ -14,7 +14,7 @@
 	@return c: nouvelle matrice ou null
 */
 
-t_matrices ft_add_matrices(t_matrices *a, t_matrices *b)
+t_matrices add_matrices(t_matrices *a, t_matrices *b)
 {
 	unsigned int 	i;
 	unsigned int 	j;
