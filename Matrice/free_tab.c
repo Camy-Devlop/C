@@ -12,7 +12,7 @@
   @return :
 */
 
-void ft_free_tab(int **tab, unsigned int l) 
+void free_tab(int **tab, unsigned int l) 
 {
   unsigned int	i;
 
