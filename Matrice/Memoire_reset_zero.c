@@ -4,7 +4,7 @@
 */
 #include "libmatrice.h"
 /*
-  @brief	 	: 	mettre à zero la zone memoire alloué dynamiquement 
+  @brief	 	: 	 mettre à zero la zone memoire alloué dynamiquement 
                 pour nettoyer la memoire et la liberer proprement
 
   @param	tab : 	tableau a louer
