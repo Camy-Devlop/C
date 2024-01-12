@@ -1,4 +1,4 @@
-﻿/*
+/*
    auteur: adbaibi ismail
    date  : 08/01/2024    
 */
@@ -14,26 +14,33 @@
 	@return c: nouvelle matrice ou null
 */
 
-t_matrices add_matrices(t_matrices *a, t_matrices *b)
+t_matrices add_matrices(t_matrice *a, t_matrice *b)
 {
-	unsigned int 	i;
-	unsigned int 	j;
-	t_matrices 		c;
+	unsigned int 	i;//valeur qui va me permetre de me deplacer dans les ligne du tableau
+	unsigned int 	j;//valeur qui va me permetre de me deplacer dans les colonne du tableau
+	t_matrices 		c;//la novelle matrice
 
-	i = 0;
-	j = 0;
-	if (a->lig != b->lig || a->col != b->col || !a->mat ||!b->mat)
-		return (NULL);
-	c.mat = ft_get_tab_2d(a->lig, a->col);
-	if (!c.mat)
+	i = 0;//init a 0 parce que le tableau commence a l'indice 0
+	j = 0; // mene chose 
+	
+	//verifie si le son correcte sinon alors elle retourne null 
+	if (a->lig != b->lig || a->col != b->col || !a->mat ||!b->matrice)
+		return (NULL);// return null il y a eu une error 
+		
+		//demande a la fonction de cree un tableau pour la matrice avec les dimasion voulu.
+	c.matrice = get_tab_2d(a->lig, a->col);
+	//s'il y a un problem alors il retourne null
+	if (!c.matrice)
 		return (NULL);
 	c.lig = a->lig;
 	c.col = a->col;
+	
+	//effecture l'operation dádd pour laa matrice 
 	while (i < a->lig)
 	{
 		while (j < a->col)
 		{
-			c.mat[i][j] = a->mat[i][j] + b->mat[i][j];
+			c.matrice[i][j] = a->matrice[i][j] + b->matrice[i][j];
 			j++;
 		}
 		j = 0;
