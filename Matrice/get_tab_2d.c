@@ -1,4 +1,4 @@
-﻿/*
+/*
    auteur: adbaibi ismail
    date  : 08/01/2024    
 */
@@ -28,7 +28,7 @@ int **get_tab_2d(unsigned int l, unsigned int c)
 		res[i] = (int *)malloc(c * sizeof(int));
 		if (!res[i])
 		{
-			ft_free_tab(res, i);
+			free_tab(res, i);
 			return (NULL);
 		}
 		i++;
