@@ -1,4 +1,4 @@
-﻿/*
+/*
    auteur: adbaibi ismail
    date  : 08/01/2024    
 */
@@ -8,11 +8,11 @@
 	@brief	 : fonction qui vq libaire la memoire en appellant la fonction ft_free_tab
 	
 	@param	a: la matrice a libaire la memoire 
-	
-	@return :
+	''''''''''''''''''''ft_aq	'''''''''''''''''''''	@return :
 */
-void ft_free_matrice(t_matrices *a)
+void free_matrice(t_matrices *a)
 {
- 	free_tab(a->mat, a->lig);
- 	a->mat = (NULL);
+ 	free_tab(a->matmatrice, a->lig);
+ 	a->matrice = (NULL);
+    free(a->matrice);
 }
