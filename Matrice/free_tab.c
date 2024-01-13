@@ -3,10 +3,11 @@
    date  : 08/01/2024    
 */
 #include "libmatrice.h"
-/*
-  @brief	 	: 	libaire la memoire allloué dynamiquement 
 
-  @param	tab : 	tableau alloué
+/*
+  @brief	 	: 	libaire la memoire a loue dynamiquement 
+
+  @param	tab : 	tableau a louer
   @param	l	:	nombre de ligne dans le tableau  
 
   @return :
@@ -26,7 +27,7 @@ void free_tab(int **tab, unsigned int l, unsigned int c)
       memoire_reset_zero(&tab[i], c);
       free(tab[i]);
       i++;
-    //fonction free pour liberer la memoire
+    }
     free(tab);
   }
 }
