@@ -35,7 +35,7 @@ t_matrices add_matrices(t_matrice *a, t_matrice *b)
 	c.lig = a->lig;
 	c.col = a->col;
 	
-	//effecture l'operation dádd pour laa matrice 
+	//effecture l'operation d'add a + b = c 
 	while (i < a->lig)
 	{
 		while (j < a->col)
