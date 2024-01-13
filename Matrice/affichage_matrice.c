@@ -9,7 +9,7 @@
   @return :
 */
 
-void affichage_matrice(t_matrices a)
+void affichage_matrice(t_matrice a)
 {
 	unsigned int i;
 	unsigned int j;
@@ -20,7 +20,7 @@ void affichage_matrice(t_matrices a)
  	{
  		while(j < a.lig)
  		{
- 			printf("%d ",a.mat[i][j]);
+ 			printf("%d ",a.matrice[i][j]);
  			j++;
  		}
  		j = 0;
