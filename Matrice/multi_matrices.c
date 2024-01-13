@@ -24,7 +24,7 @@ t_matrice multi_matrices(t_matrice *a, t_matrice *b)
 	if (a->lig != b->lig || a->col != b->col || !a->matrice ||!b->matrice)
 		return (c);
 	c.matrice = get_tab_2d(a->lig, a->col);
-	if (!c.mat)
+	if (!c.matrice)
 		return (c);
 	c.lig = a->lig;
 	c.col = a->col;
