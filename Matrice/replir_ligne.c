@@ -1,4 +1,4 @@
-﻿/*
+/*
    auteur: adbaibi ismail
    date  : 08/01/2024    
 */
@@ -14,20 +14,20 @@
 	@return	  :	ne retoune rien parce que la matrice a ete passer en paramtre pointeur
 	  
 */
-void replir_ligne(t_matrices *a, int **tab)
+void replir_ligne(t_matrice *a, int **tab)
 {
  	unsigned int i;
  	unsigned int j;
 
  	i = 0;
  	j = 0;
- 	if (!tab || a->col == 0 || a->lig == 0 || !a->mat)
+ 	if (!tab || a->col == 0 || a->lig == 0 || !a->matrice)
  		return ;
  	while(i < a->lig)
  	{
  		while (j < a->col)
  		{
- 			a->mat[i][j] = tab[i][j];
+ 			a->matrice[i][j] = tab[i][j];
  			j++;
  		}
  		j = 0;
