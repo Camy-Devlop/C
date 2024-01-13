@@ -1,4 +1,4 @@
-﻿/*
+/*
    auteur: adbaibi ismail
    date  : 08/01/2024    
 */
@@ -12,17 +12,18 @@
   @return :
 */
 
-void free_tab(int **tab, unsigned int l) 
+void free_tab(int **tab, unsigned int l, unsigned int c) 
 {
   unsigned int	i;
-
+  
   i = 0;
   if (!tab)
     return ;
-  if (l != 0)
+  if (l != 0 && c != 0)
   {
     while (i < l)
     {
+      memoire_reset_zero(&tab[i], c);
       free(tab[i]);
       i++;
     }
