@@ -14,17 +14,17 @@
 	@return c: nouvelle matrice ou null
 */
 
-t_matrices add_matrices(t_matrice *a, t_matrice *b)
+t_matrice add_matrices(t_matrice *a, t_matrice *b)
 {
 	unsigned int 	i;//valeur qui va me permetre de me deplacer dans les ligne du tableau
 	unsigned int 	j;//valeur qui va me permetre de me deplacer dans les colonne du tableau
-	t_matrices 		c;//la novelle matrice
+	t_matrice 		c;//la novelle matrice
 
 	i = 0;//init a 0 parce que le tableau commence a l'indice 0
 	j = 0; // mene chose 
 	
 	//verifie si le son correcte sinon alors elle retourne null 
-	if (a->lig != b->lig || a->col != b->col || !a->mat ||!b->matrice)
+	if (a->lig != b->lig || a->col != b->col || !a->matrice ||!b->matrice)
 		return (NULL);// return null il y a eu une error 
 		
 		//demande a la fonction de cree un tableau pour la matrice avec les dimasion voulu.
