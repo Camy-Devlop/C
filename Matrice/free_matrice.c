@@ -4,15 +4,17 @@
 */
 
 #include "libmatrice.h"
+
 /*
-	@brief	 : fonction qui vq libaire la memoire en appellant la fonction ft_free_tab
-	
-	@param	a: la matrice a libaire la memoire 
-	''''''''''''''''''''ft_aq	'''''''''''''''''''''	@return :
+  @brief	 : fonction qui va liberer la memoire en appellant la fonction free_tab
+
+  @param	a: liberé la matrice de la memoire 
+
+  @return :
 */
 void free_matrice(t_matrice *a)
 {
- 	free_tab(a->matrice, a->lig);
- 	a->matrice = (NULL);
-    free(a->matrice);
+  free_tab(a->matrice, a->lig, a->col);
+  a->matrice = NULL;
+  free(a->matrice);
 }
