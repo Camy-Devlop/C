@@ -13,15 +13,15 @@
 	
 	@return c: nouvelle matrice ou null
 */
-t_matrices multi_matrices(t_matrice *a, t_matrice *b)
+t_matrice multi_matrices(t_matrice *a, t_matrice *b)
 {
 	unsigned int 	i;
 	unsigned int 	j;
-	t_matrices 		c;
+	t_matrice 		c;
 
 	i = 0;
 	j = 0;
-	if (a->lig != b->lig || a->col != b->col || !a->matrice ||!b->mat)
+	if (a->lig != b->lig || a->col != b->col || !a->matrice ||!b->matrice)
 		return (NULL);
 	c.matrice = get_tab_2d(a->lig, a->col);
 	if (!c.mat)
