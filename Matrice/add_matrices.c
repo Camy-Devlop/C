@@ -25,13 +25,13 @@ t_matrice add_matrices(t_matrice *a, t_matrice *b)
 	
 	//verifie si le son correcte sinon alors elle retourne null 
 	if (a->lig != b->lig || a->col != b->col || !a->matrice ||!b->matrice)
-		return (NULL);// return null il y a eu une error 
+		return (c);// return matrice vide s' il y a eu une error 
 		
 		//demande a la fonction de cree un tableau pour la matrice avec les dimasion voulu.
 	c.matrice = get_tab_2d(a->lig, a->col);
-	//s'il y a un problem alors il retourne null
+	//s'il y a un problem alors il retourne matrice vide
 	if (!c.matrice)
-		return (NULL);
+		return (c);
 	c.lig = a->lig;
 	c.col = a->col;
 	
