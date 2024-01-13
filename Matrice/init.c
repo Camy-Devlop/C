@@ -13,7 +13,7 @@
 	@return a:	retourne le paramettre init  sinon il retrounr null 
 */
 
-t_matrices *init(t_matrices *a)
+t_matrice *init(t_matrice *a)
 {
 	unsigned int	i;
 
