@@ -10,9 +10,9 @@
 	@param	a: la matrice a libaire la memoire 
 	''''''''''''''''''''ft_aq	'''''''''''''''''''''	@return :
 */
-void free_matrice(t_matrices *a)
+void free_matrice(t_matrice *a)
 {
- 	free_tab(a->matmatrice, a->lig);
+ 	free_tab(a->matrice, a->lig);
  	a->matrice = (NULL);
     free(a->matrice);
 }
