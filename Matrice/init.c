@@ -1,4 +1,4 @@
-﻿/*
+/*
    auteur: adbaibi ismail
    date  : 08/01/2024    
 */
@@ -20,16 +20,16 @@ t_matrices *init(t_matrices *a)
 	i = 0;
 	if (a->lig == 0 || a->col == 0)
 		return (NULL);
-	a->mat = (int**)malloc(a->lig * sizeof(int*));
-	if(!a->mat)
+	a->matrice = (int**)malloc(a->lig * sizeof(int*));
+	if(!a->matrice)
 		return (NULL);
 	while(i < a->lig)
  	{
- 		a->mat[i] = (int*)malloc(a->col * sizeof(int));
- 		if (!a->mat[i])
+ 		a->matrice[i] = (int*)malloc(a->col * sizeof(int));
+ 		if (!a->matrice[i])
  		{	
  			a->lig = i;
- 			free_matrices(&a);
+ 			free_matrice(&a);
  			return (NULL);
   		}
  		i++;
