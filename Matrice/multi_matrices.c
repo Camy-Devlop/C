@@ -1,4 +1,4 @@
-﻿/*
+/*
    auteur: adbaibi ismail
    date  : 10/01/2024    
 */
@@ -13,7 +13,7 @@
 	
 	@return c: nouvelle matrice ou null
 */
-t_matrices multi_matrices(t_matrices *a, t_matrices *b)
+t_matrices multi_matrices(t_matrice *a, t_matrice *b)
 {
 	unsigned int 	i;
 	unsigned int 	j;
@@ -21,9 +21,9 @@ t_matrices multi_matrices(t_matrices *a, t_matrices *b)
 
 	i = 0;
 	j = 0;
-	if (a->lig != b->lig || a->col != b->col || !a->mat ||!b->mat)
+	if (a->lig != b->lig || a->col != b->col || !a->matrice ||!b->mat)
 		return (NULL);
-	c.mat = get_tab_2d(a->lig, a->col);
+	c.matrice = get_tab_2d(a->lig, a->col);
 	if (!c.mat)
 		return (NULL);
 	c.lig = a->lig;
@@ -32,7 +32,7 @@ t_matrices multi_matrices(t_matrices *a, t_matrices *b)
 	{
 		while (j < a->col)
 		{
-			c.mat[i][j] = multi_ligne_colonne(a, b, i,j );
+			c.matrice[i][j] = multi_ligne_colonne(a, b, i,j );
 			j++;
 		}
 		j = 0;
