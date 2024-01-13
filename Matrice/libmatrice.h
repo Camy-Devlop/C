@@ -1,4 +1,4 @@
-﻿/*
+/*
    auteur: adbaibi ismail
    date  : 08/01/2024    
 */
@@ -18,35 +18,25 @@
   @param	col	:	nombre de colonne
 */
 
-typedef struct s_matrices
+typedef struct s_matrice
  {
-  int 			**mat;
+  int 			**matrice;
   unsigned int 	lig;
   unsigned int 	col;
 
- }t_matrices;
+ }t_matrice;
 
-void ft_free_tab(int **tab, unsigned int l);
-void ft_free_matrices(t_matrices *a);
+void free_tab(int **tab, unsigned int l);
+void free_matrice(t_matrice *a);
 
-int **ft_get_tab_2d(unsigned int l, unsigned int c);
-t_matrices *ft_init(t_matrices *a);
+int **get_tab_2d(unsigned int l, unsigned int c);
+t_matrice *init(t_matrice *a);
 
-t_matrices ft_add_matrices(t_matrices *a, t_matrices *b);
-t_matrices ft_multi_matrices(t_matrices *a, t_matrices *b);
-int multi_ligne_colonne(t_matrices *a , t_matrices *b, unsigned int lig, unsigned col);
+t_matrice add_matrices(t_matrice *a, t_matrice *b);
+t_matrice multi_matrices(t_matrice *a, t_matrice *b);
+int multi_ligne_colonne(t_matrice *a , t_matrice *b, unsigned int lig, unsigned col);
 
-void ft_replir_ligne(t_matrices *a, int **tab);
-void ft_affichage_matrice(t_matrices a);
-
-#include "ft_init.c"
-#include "ft_get_tab_2d.c"
-#include "ft_replir_ligne.c"
-#include "ft_affichage_matrice.c"
-#include "ft_add_matrices.c"
-#include "ft_free_tab.c"
-#include "ft_free_matrice.c"
-#include "ft_multi_ligne_colonne.c"
-#include "ft_multi_matrices.c"
+void replir_ligne(t_matrice *a, int **tab);
+void affichage_matrice(t_matrice a);
 
 #endif
