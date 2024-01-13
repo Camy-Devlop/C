@@ -11,7 +11,7 @@
 
   @param	a: liberé la matrice de la memoire 
 
-  @return :
+  @return : retourne un le resultat de la multiplication 
 */
 
 int multi_ligne_colonne(t_matrice *a , t_matrice *b, unsigned int lig, unsigned col)
