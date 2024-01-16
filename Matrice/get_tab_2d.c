@@ -34,4 +34,4 @@ int **get_tab_2d(unsigned int l, unsigned int c)
     i++;
   }
   return (res);
-} 
+}
