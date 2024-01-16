@@ -17,8 +17,8 @@
   @return int :	retourne un entier qui est ma multiplication de de la lignc                  et de la colonnne
 */
 
-int multi_ligne_colonne(t_matrice *a, t_matrice *b, unsigned int lig,
-                           unsigned col) {
+int multi_ligne_colonne(t_matrice *a, t_matrice *b, unsigned int lig, unsigned col)
+{
   unsigned int i;
   int res;
   i = 0;
