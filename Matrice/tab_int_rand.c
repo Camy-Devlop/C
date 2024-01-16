@@ -1,22 +1,28 @@
 /*
    auteur: adbaibi ismail
-   date  : 13/01/2024    
+   date  : 08/01/2024    
 */
 #include "libmatrice.h"
 
 /*
-  @brief	 	: 	remplie un tableau de valeur aleatoire
+  @brief	 	: 	libaire la memoire a loue dynamiquement 
 
   @param	tab : 	tableau a louer
-  @param	l	:	nombre de lignes dans le tableau
-  @param	l	:	nombre de colonnes dans le tableau
+  @param	l	:	nombre de ligne dans le tableau  
 
   @return :
 */
 
 void tab_int_rand(int **tab, unsigned int l, unsigned int c) 
 {
-    srand(time(NULL));
+    // Utiliser une variable statique pour suivre si la fonction a déjà été appelée
+    static int estInitialise = 0;
+
+    if (!estInitialise) {
+        // Initialiser le générateur de nombres aléatoires avec le temps actuel
+        srand((unsigned int)time(NULL));
+        estInitialise = 1;
+    }
     unsigned int  i;
     unsigned int  j;
 
