@@ -1,31 +1,26 @@
 /*
    auteur: adbaibi ismail
-   date  : 11/01/2024    
+   date  : 08/01/2024    
 */
+
 #include "libmatrice.h"
-/*
-  @brief	 	: 	 affichier la matrice 
-  @param	tab : 	la matrice qu'on veux. affichier 
-  @return :
-*/
 
 void affichage_matrice(t_matrice a)
 {
-	unsigned int i;
-	unsigned int j;
- 
- 	i = 0;
- 	j = 0;
- 	while(i < a.col)
- 	{
- 		while(j < a.lig)
- 		{
- 			printf("%d ",a.matrice[i][j]);
- 			j++;
- 		}
- 		j = 0;
- 		i++;
- 		printf("\n");
- 	}
- 	
+  unsigned int i;
+  unsigned int j;
+
+  i = 0;
+  j = 0;
+  while(i < a.lig)
+  {
+    while(j < a.col)
+    {
+      printf("%d ",a.matrice[i][j]);
+      j++;
+    }
+    j = 0;
+    i++;
+    printf("\n");
+  }
  }
