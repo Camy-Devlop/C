@@ -26,7 +26,7 @@ typedef struct s_matrice {
 
 } t_matrice;
 
-void				tab_int_rand(int **tab, unsigned int l, unsigned int c) 
+void				tab_int_rand(int **tab, unsigned int l, unsigned int c);
 void				memoire_reset_zero(int *memoire, unsigned int n);
 void				free_tab(int **tab, unsigned int l, unsigned int c);
 void				free_matrice(t_matrice *a);
