@@ -6,7 +6,9 @@
 #include "libmatrice.h"
 
 /*
-  @breif	 : 	La fonction initialisera la matrice, et si l'allocation dynamique avec malloc n'a pas réussi, elle                libérera la mémoire déjà allouée et retournera null.
+  @breif	 : 	La fonction initialisera la matrice, et si l'allocation dynamique 
+  						avec malloc n'a pas réussi, elle
+  						libérera la mémoire déjà allouée et retournera null.
 
   @param a :	est la matrice a initialisée
 
