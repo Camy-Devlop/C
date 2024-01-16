@@ -8,14 +8,14 @@ int main() {
   t_matrice a;
   t_matrice b;
   a.lig = 2;
-  a.col = 2;
-  b.lig = 2;
-  b.col = 2;
+  a.col = 3;
+  b.lig = 3;
+  b.col = 4;
 
   init(&a);
   init(&b);
 
-  if (init(&a) != NULL) {
+  if (init(&a) != NULL && init(&a) != NULL ) {
     int **n;
     int **m;
     n = get_tab_2d(a.lig, a.col);
