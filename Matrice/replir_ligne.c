@@ -7,12 +7,14 @@
 
 
 /*
-  @breif : 	Cette fonction remplit la matrice avec les valeurs provenant du tableau                 passé en paramètre, appelé 'tab'.
+  @breif : 	Cette fonction remplit la matrice avec les valeurs provenant du tableau
+           	passé en paramètre, appelé 'tab'.
   
   @param a  :	variable de type matrice 
   @param tab:	tableau de meme dimasion que la matrice
 
-  @return	  :	Ne retourne rien, car la matrice a été passée en paramètre sous forme de                pointeur.
+  @return	  :	Ne retourne rien, car la matrice a été passée en paramètre sous 
+  						forme de pointeur.
 */
 void replir_ligne(t_matrice *a, int **tab)
 {
