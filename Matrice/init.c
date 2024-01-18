@@ -35,7 +35,7 @@ t_matrice *init(t_matrice *a)
     {	//Si l'allocation dynamique avec malloc échoue, la fonction appellera la fonction free_matrice 
       //pour libérer la mémoire qui a été allouée juste avant.
       a->lig = i;
-      free_matrice(&a);//liberation de la memoire
+      free_matrice(a);//liberation de la memoire
       return NULL;
       }
     i++;
