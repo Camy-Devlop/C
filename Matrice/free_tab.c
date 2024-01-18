@@ -24,7 +24,7 @@ void free_tab(int **tab, unsigned int l, unsigned int c)
   {
     while (i < l)
     {
-      memoire_reset_zero(&tab[i], c);
+      memoire_reset_zero(tab[i], c);
       free(tab[i]);
       i++;
     }
