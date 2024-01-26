@@ -15,6 +15,6 @@
 void free_matrice(t_matrice *a)
 {
   free_tab(a->matrice, a->lig, a->col);
-  a->matrice = NULL;
-  free(a->matrice);
+  free(a);
+  a = NULL;
 }
