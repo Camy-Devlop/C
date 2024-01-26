@@ -26,8 +26,10 @@ void free_tab(int **tab, unsigned int l, unsigned int c)
     {
       memoire_reset_zero(tab[i], c);
       free(tab[i]);
+      tab[i] = NULL;
       i++;
     }
     free(tab);
+    tab = NULL;
   }
 }
